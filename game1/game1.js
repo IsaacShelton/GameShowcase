@@ -84,8 +84,8 @@ game.update = function () {
 		}
 	}
 	
-	if(left) x -= 1;
-	if(right) x += 1;
+	if(left) x -= 1.5;
+	if(right) x += 1.5;
 }
 
 game.draw = function () {
