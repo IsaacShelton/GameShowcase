@@ -1,0 +1,86 @@
+
+.txt {
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	text-align: center;
+	padding: 2px;
+}
+
+.header {
+	width: 100%;
+	background-color: #FFFF00;
+	text-decoration: none;
+}
+
+.banner {
+	position:absolute;
+	background-color:#FA0000;
+	width:100%;
+	height:64px;
+}
+
+.link {
+	text-decoration: none;
+	color: #E00000;
+}
+
+.title-nav {
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	text-align: center;
+	top:14px;
+	position:absolute;
+	font-size:16;
+	text-align:center;
+	color:white;
+	width:100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E00000;
+}
+
+li {			
+    float: left;
+}
+
+li a {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #F00000;
+}
+
+@media screen and (min-width: 1024px){
+	.outer-div{ width:75%; }
+	.first-inner-div{ float:left;width:50%; }
+	.second-inner-div{ float:right;width:50%; }
+	.inner-shown{ display: none; }
+}
+
+.image img {
+    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;
+}
+
+.image:hover img {
+    -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+     transform:scale(1.05);
+}
+
