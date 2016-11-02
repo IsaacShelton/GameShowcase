@@ -22,6 +22,7 @@ var aliens = [];
 var aliens_x = 0; // aliens relative location
 var aliens_d = 1; // 1 or -1 for direction
 
+// Lazy I know
 aliens[0] = {x: 320 -  32, y: 64, alive: true}
 aliens[1] = {x: 320 +  48, y: 64, alive: true}
 aliens[2] = {x: 320 - 112, y: 64, alive: true}
@@ -74,6 +75,7 @@ game.update = function () {
    			aliens[i].alive = false;
 			bullet.active = false;
 
+			// Lazy I know
 			if(!aliens[0].alive && !aliens[1].alive && !aliens[2].alive && !aliens[3].alive && !aliens[4].alive){
 				aliens[0].alive = true;
 				aliens[1].alive = true;
