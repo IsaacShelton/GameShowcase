@@ -73,6 +73,14 @@ game.update = function () {
 		if ( aliens[i].alive && Math.sqrt( Math.pow((aliens[i].x+aliens_x+16)-(bullet.x+12), 2) + Math.pow(aliens[i].y+16-bullet.y+12, 2) ) <  20 ) {
    			aliens[i].alive = false;
 			bullet.active = false;
+
+			if(!aliens[0].alive && !aliens[1].alive && !aliens[2].alive && !aliens[3].alive && !aliens[4].alive){
+				aliens[0].alive = true;
+				aliens[1].alive = true;
+				aliens[2].alive = true;
+				aliens[3].alive = true;
+				aliens[4].alive = true;
+			}
 		}
 	}
 	
