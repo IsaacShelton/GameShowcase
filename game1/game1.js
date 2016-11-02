@@ -70,13 +70,10 @@ game.update = function () {
 	if(bullet.y < -24) bullet.active = false;
 
 	for(var i = 0; i < aliens.length; i++){
-		if (x < aliens[i].x + 32 &&
-                x + 32 > aliens[i].x &&
-                y < aliens[i].y + 32 &&
-                32 + y > aliens[i].y
-                && (y < aliens[i].y+32 || y > aliens[i].y+32) ) {
-                    alive = false
-            }
+		if ( aliens[i].alive && Math.sqrt( Math.pow((aliens[i].x+aliens_x+16)-(bullet.x+12), 2) + Math.pow(aliens[i].y+16-bullet.y+12, 2) ) <  20 ) {
+   			aliens[i].alive = false;
+			bullet.active = false;
+		}
 	}
 	
 	if(left) x -= 1;
@@ -96,7 +93,9 @@ game.draw = function () {
 	
 	if(enemy.complete) {
 		for(var i = 0; i < aliens.length; i++){
-			context.drawImage(enemy, aliens[i].x + aliens_x, aliens[0].y, 32, 32);
+			if(aliens[i].alive){
+				context.drawImage(enemy, aliens[i].x + aliens_x, aliens[0].y, 32, 32);
+			}
 		}
 	}
 	
