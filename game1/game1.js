@@ -70,7 +70,7 @@ game.update = function () {
 	if(bullet.y < -24) bullet.active = false;
 
 	for(var i = 0; i < aliens.length; i++){
-		if ( aliens[i].alive && Math.sqrt( Math.pow((aliens[i].x+aliens_x+16)-(bullet.x+12), 2) + Math.pow(aliens[i].y+16-bullet.y+12, 2) ) <  20 ) {
+		if ( bullet.active && aliens[i].alive && Math.sqrt( Math.pow((aliens[i].x+aliens_x+16)-(bullet.x+12), 2) + Math.pow(aliens[i].y+16-bullet.y+12, 2) ) <  20 ) {
    			aliens[i].alive = false;
 			bullet.active = false;
 
