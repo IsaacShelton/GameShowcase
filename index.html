@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game Showcase</title>
+		<meta name="description" content=“Description of Site”/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="file:///Users/isaaashel71/Desktop/showcase/styles/style.css"></link>
+		<link rel="stylesheet" type="text/css" href="file:///Users/isaaashel71/Desktop/showcase/styles/nav-drawer.css"></link>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="file:///Users/isaaashel71/Desktop/showcase/scripts/nav-drawer.js"></script>
+		<meta name="mobile-web-app-capable" content="yes"/>
+	</head>
+	<body style="margin:0;" onresize="windowResize();">
+		<span class="nav-banner-style" id="nav-banner" onclick="javascript:window.location = '/'"></span>
+		<span id="nav-title" class="nav-title-style">Game Showcase</span>
+		<img alt="nav" src="http://dockysoft.com/res/nav.png" id="nav-button" style="position:absolute;" onclick="toggleNavigationUl();" class="toggle-shown"/>
+		<ul class="expanded-ul" id="navigation-ul">
+			<li class="expanded-li"><a href="file:///Users/isaaashel71/Desktop/showcase/index.html">Showcase</a></li>
+			<li class="expanded-li"><a href="file:///Users/isaaashel71/Desktop/showcase/game1/index.html">Game 1</a></li>
+			<li class="expanded-li"><a href="file:///Users/isaaashel71/Desktop/showcase/game2/index.html">Flappy Falcon</a></li>
+			<li class="expanded-li"><a href="file:///Users/isaaashel71/Desktop/showcase/game3/index.html">Game 3</a></li>
+			<li class="expanded-li" style="float:right;"><a href="file:///Users/isaaashel71/Desktop/showcase/about/index.html">About</a></li>
+		</ul>
+
+		<br/><br/><br/><br/>
+
+		<p class="txt">
+			Welcome to the game showcase! We showcase cool javascript games.<br/>Adobe Flash wasn't used because most browsers don't support plugins anymore. These games also work on mobile devices.<br/>All games were created by Isaac Shelton.
+		</p>
+
+		<br/><br/>
+
+		<div style="margin: 0 auto;" class="outer-div">
+				<div style="text-align:center;" class="first-inner-div" >
+					<div style="width:320px;margin:0 auto;">
+						<p class="txt" style="background-color:#F00000;margin:0;padding:4px;color:#FFFFFF;">Game 1</p>
+					</div>
+					<div class="image">
+						<img src="http://gencept.com/wp-content/uploads/2016/04/Wallpaper-of-the-Week-25-Material-Design-Inspired-Wallpapers_20-@-GenCept.png" alt="game1" width="320px" onclick="window.location='file:///Users/isaaashel71/Desktop/showcase/game1/index.html'"></img>
+					</div>
+				</div>
+				<div style="text-align:center;" class="second-inner-div">
+					<div style="width:320px;margin:0 auto;">
+						<p class="txt" style="background-color:#F00000;margin:0;padding:4px;color:#FFFFFF;">Flappy Falcon</p>
+					</div>
+					<div class="image">
+						<img src="http://1.bp.blogspot.com/-u2YjNPd0cmA/VGGaDwhCoVI/AAAAAAAAEMA/olcjKnL_UEU/s0/Material_Design_Wallpaper_WALLPAPERDNA%2B(54).png" alt="game2" width="320px" onclick="window.location='file:///Users/isaaashel71/Desktop/showcase/game2/index.html'"></img>
+					</div>
+				</div>
+		</div>
+		<div style="margin: 0 auto;" class="outer-div">
+			<div style="text-align:center;" class="second-inner-div">
+				<div style="width:320px;margin:0 auto;">
+					<p class="txt" style="background-color:#F00000;margin:0;padding:4px;color:#FFFFFF;">Game 3</p>
+				</div>
+				<div class="image">
+					<img src="http://img3.goodfon.su/original/1920x1200/d/84/android-5-0-lollipop-material-4068.jpg" alt="game3" width="320px" onclick="window.location='file:///Users/isaaashel71/Desktop/showcase/game3/index.html'"></img>
+				</div>
+			</div>
+			<div style="text-align:center;" class="second-inner-div">
+				<div style="width:320px;margin:0 auto;">
+					<p class="txt" style="background-color:#F00000;margin:0;padding:4px;color:#FFFFFF;">About Us</p>
+				</div>
+			<div class="image">
+					<img src="http://cdn.wallpapersafari.com/71/63/V5LuJZ.jpg" alt="game2" width="320px" onclick="window.location='file:///Users/isaaashel71/Desktop/showcase/about/index.html'"></img>
+			</div>
+		</div>
+		
+		<p class="txt">
+			(c) 2016 Isaac Shelton
+		</p>
+	</body>
+</html>
